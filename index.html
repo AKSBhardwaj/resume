@@ -3,49 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alok Kumar Sharma - ATS Resume</title>
-
+    <title>Alok Kumar Sharma -Angular Node GenAI Developer</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-
     <style>
       body {
         font-family: Arial, sans-serif;
         background: #f5f5f5;
         color: #333;
       }
-
       .resume-container {
-        max-width: 900px;
+        max-width: 950px;
         margin: 30px auto;
         background: #fff;
         padding: 40px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       }
-
       .name {
         font-size: 36px;
         font-weight: 700;
         text-transform: uppercase;
       }
-
       .designation {
         font-size: 18px;
         color: #555;
-        margin-bottom: 10px;
       }
-
       .section-title {
         font-size: 20px;
         font-weight: 700;
         border-bottom: 2px solid #000;
-        margin-top: 30px;
+        margin-top: 28px;
         margin-bottom: 15px;
         padding-bottom: 5px;
       }
-
       .skills span {
         display: inline-block;
         border: 1px solid #ddd;
@@ -54,37 +46,87 @@
         border-radius: 4px;
         font-size: 14px;
       }
-
-      ul {
-        padding-left: 20px;
-      }
-
-      .job {
-        margin-bottom: 20px;
-      }
-
       .company {
         font-weight: bold;
       }
-
       .date {
         color: #666;
         font-size: 14px;
       }
-
+      .download-btn {
+        position: sticky;
+        bottom: 15px;
+      }
       @media print {
-        body {
-          background: #fff;
+        @page {
+          size: A4;
+          margin: 12mm;
         }
-
+        .download-btn {
+          display: none;
+        }
+        * {
+          -webkit-print-color-adjust: exact;
+          print-color-adjust: exact;
+        }
         .resume-container {
           box-shadow: none;
           margin: 0;
           max-width: 100%;
+          padding: 0;
         }
-
-        .download-btn {
-          display: none;
+        .container {
+          padding: 0;
+          margin: 0;
+          max-width: 100%;
+        }
+        body {
+          background: #fff;
+          margin: 0;
+          padding: 0;
+          font-size: 12px;
+          line-height: 1.35;
+        }
+        .name {
+          font-size: 28px;
+        }
+        .designation {
+          font-size: 14px;
+        }
+        .section-title {
+          font-size: 16px;
+          margin-top: 16px;
+          margin-bottom: 8px;
+          padding-bottom: 4px;
+        }
+        .date {
+          font-size: 12px;
+        }
+        ul {
+          margin-bottom: 8px;
+        }
+        ul li {
+          margin-bottom: 4px;
+        }
+        .skills span {
+          padding: 4px 8px;
+          margin: 2px;
+          font-size: 12px;
+        }
+        .mb-3 {
+          margin-bottom: 10px;
+        }
+        .section-title {
+          break-after: avoid;
+          page-break-after: avoid;
+        }
+        ul,
+        .mb-3,
+        .skills,
+        p,
+        li {
+          break-inside: avoid;
+          page-break-inside: avoid;
         }
       }
     </style>
@@ -94,137 +136,171 @@
       <div class="resume-container" id="resume">
         <div class="text-center">
           <div class="name">Alok Kumar Sharma</div>
-
           <div class="designation">
             Senior Angular Developer | Full Stack Developer | Azure AI Engineer
             | GenAI Engineer
           </div>
-
-          <p>New Delhi, India | 8227934642 | uccaksharma@gmail.com</p>
-
+          <p class="mb-1">
+            New Delhi, India | +91-7033010396 | uccaksharma@gmail.com
+          </p>
           <p>
-            LinkedIn: linkedin.com/in/aks-bhardwaj | Portfolio: aksbhardwaj.com
+            LinkedIn: linkedin.com/in/aks-bhardwaj | Portfolio:
+            https://aksbhardwaj.github.io/resume/
           </p>
         </div>
 
         <div class="section-title">Professional Summary</div>
-
         <p>
           Senior Angular Developer and Full Stack Engineer with 5+ years of
-          experience building enterprise applications using Angular, TypeScript,
-          PrimeNG, Node.js, REST APIs, MySQL, and Azure DevOps. Microsoft
-          Certified Azure AI Engineer Associate with expertise in Generative AI,
-          Prompt Engineering, OpenAI API, Gemini API, AI Chatbots, and
-          intelligent automation solutions.
+          experience building enterprise applications using Angular 4 to Angular
+          21, TypeScript, JavaScript, PrimeNG, Angular Material, Node.js,
+          Express.js, REST APIs, MySQL and Azure DevOps. Microsoft Certified
+          Azure AI Engineer Associate with expertise in Generative AI, Prompt
+          Engineering, OpenAI API, Gemini API, AI Chatbots and intelligent
+          automation solutions. Experienced in Agile Scrum, CI/CD, reusable
+          component architecture, JWT Authentication and enterprise application
+          development.
         </p>
 
         <div class="section-title">Certifications</div>
-
         <ul>
           <li>Microsoft Certified: Azure AI Engineer Associate (2026)</li>
           <li>Angular – The Complete Guide (Udemy)</li>
           <li>The Complete Prompt Engineering for AI Bootcamp</li>
-          <li>JavaScript Algorithms and Data Structures</li>
+          <li>JavaScript Algorithms and Data Structures (freeCodeCamp)</li>
           <li>Foundation: JavaScript Intermediate (TCS)</li>
           <li>JavaScript with ECMAScript 2015</li>
-          <li>SQL Developer</li>
-          <li>Angular 11</li>
+          <li>SQL Developer (TCS)</li>
+          <li>Angular 11 (HCL - Skill Circle)</li>
         </ul>
 
         <div class="section-title">Core Skills</div>
-
         <div class="skills">
-          <span>Angular 20+</span>
-          <span>TypeScript</span>
-          <span>JavaScript</span>
-          <span>PrimeNG</span>
-          <span>Angular Material</span>
-          <span>RxJS</span>
-          <span>Signals</span>
-          <span>Node.js</span>
-          <span>Express.js</span>
-          <span>REST API</span>
-          <span>MySQL</span>
-          <span>MongoDB</span>
-          <span>Azure DevOps</span>
-          <span>CI/CD</span>
-          <span>Git</span>
-          <span>OpenAI API</span>
-          <span>Gemini API</span>
-          <span>Prompt Engineering</span>
-          <span>Generative AI</span>
-          <span>LLM</span>
-          <span>RAG</span>
+          <span>Angular 4 to Angular 21</span><span>TypeScript</span>
+          <span>PrimeNG</span><span>Angular Material</span><span>RxJS</span
+          ><span>Angular Signals</span> <span>Standalone Components</span
+          ><span>Reactive Forms</span><span>Lazy Loading</span>
+          <span>JWT Authentication</span> <span>JavaScript</span>
+          <span>HTML5</span> <span>CSS3</span> <span>Bootstrap</span
+          ><span>Node.js</span><span>Express.js</span> <span>REST APIs</span
+          ><span>MySQL</span><span>MongoDB</span><span>Azure DevOps</span>
+          <span>CI/CD</span><span>Git</span><span>OpenAI API</span
+          ><span>Gemini API</span> <span>Azure AI</span
+          ><span>Prompt Engineering</span><span>Generative AI</span
+          ><span>Semantic Search</span>
+          <span>Structured Data Schema Markup</span><span>Agile Scrum</span>
+          <span>HTML/CSS</span> <span>SEO Optimization</span>
+          <span>Reusability & Component Architecture</span>
+          <span>Performance Optimization</span>
+          <span>Cross-browser Compatibility</span>
+          <span>Responsive Design</span>
         </div>
 
         <div class="section-title">Professional Experience</div>
 
-        <div class="job">
+        <div class="mb-3">
           <div class="company">Tata Consultancy Services</div>
-          <div>Systems Engineer</div>
+          <div>Systems Engineer (Lead Angular Developer)</div>
           <div class="date">Apr 2023 – Present</div>
-
           <ul>
             <li>
-              Developing enterprise Shipboard Applications using Angular and
-              PrimeNG.
+              Developing enterprise Shipboard Applications using Angular,
+              PrimeNG and TypeScript.
             </li>
             <li>
-              Built reusable Angular components and responsive UI modules.
+              Built reusable Angular components, dashboards, forms and
+              responsive UI modules.
             </li>
-            <li>Worked on crew onboarding and crew management solutions.</li>
+            <li>Developed crew onboarding and crew management solutions.</li>
             <li>
               Provided production support for mission-critical applications.
             </li>
-            <li>Worked in Agile environment using Azure DevOps.</li>
+            <li>
+              Worked in Agile environment using Azure DevOps and CI/CD
+              practices.
+            </li>
+            <li>
+              Implemented role-based access control and authentication
+              workflows.
+            </li>
           </ul>
         </div>
 
-        <div class="job">
+        <div class="mb-3">
           <div class="company">HCL Technologies</div>
           <div>Software Engineer</div>
           <div class="date">May 2022 – Apr 2023</div>
-
           <ul>
             <li>Developed Angular applications with SEO optimization.</li>
-            <li>Implemented structured schema data.</li>
-            <li>Improved search indexing and performance.</li>
+            <li>Implemented structured schema data and improved indexing.</li>
+            <li>
+              Built reusable frontend components using Angular and TypeScript.
+            </li>
           </ul>
         </div>
 
-        <div class="job">
+        <div class="mb-3">
           <div class="company">LoopinTechies Services India Pvt Ltd</div>
           <div>Full Stack Developer</div>
           <div class="date">Jul 2020 – Apr 2022</div>
-
           <ul>
             <li>Developed Angular, PHP, Node.js and MySQL applications.</li>
             <li>
               Built inventory management solutions used by 400+ businesses.
             </li>
-            <li>Created reporting and authentication modules.</li>
+            <li>
+              Created reporting, authentication and PDF generation modules.
+            </li>
           </ul>
         </div>
 
         <div class="section-title">Generative AI Experience</div>
-
         <ul>
           <li>Microsoft Certified Azure AI Engineer Associate.</li>
           <li>
-            Built AI-powered chatbot applications using OpenAI and Gemini APIs.
+            Designed AI-powered applications using OpenAI API, Gemini API and
+            Azure AI Services.
           </li>
+          <li>Built AI Chatbots using Angular and Node.js.</li>
           <li>
             Implemented Prompt Engineering techniques for enterprise AI
-            solutions.
+            applications.
           </li>
-          <li>Worked on LLM, RAG and conversational AI use cases.</li>
           <li>
-            Designed AI-powered automation and content generation systems.
+            Designed AI-powered automation systems for content generation and
+            workflow optimization.
+          </li>
+        </ul>
+
+        <div class="section-title">Key Projects</div>
+        <ul>
+          <li>
+            <strong>Crew Management System</strong> – Enterprise shipboard crew
+            onboarding and management platform.
+          </li>
+          <li>
+            <strong>AI People Head Count System</strong> – Real-time people
+            monitoring solution recognized with Special Initiative Award.
+          </li>
+          <li>
+            <strong>Citi Bank Workflow System</strong> – Multi-level approval
+            workflow application with JWT authentication.
+          </li>
+          <li>
+            <strong>iPOS India</strong> – Inventory Management System used by
+            400+ liquor shops.
+          </li>
+          <li>
+            <strong>School Management System</strong> – Multi-tenant SaaS
+            platform using Angular, Node.js and MySQL.
+          </li>
+          <li>
+            <strong>AI Chatbot Platform</strong> – Conversational AI
+            applications using Gemini and OpenAI APIs.
           </li>
         </ul>
 
         <div class="section-title">Awards & Achievements</div>
-
         <ul>
           <li>Star of the Quarter – Tata Consultancy Services (Feb 2026)</li>
           <li>
@@ -234,15 +310,22 @@
         </ul>
 
         <div class="section-title">Education</div>
-
         <ul>
           <li>
-            MCA – Hindustan Institute of Technology and Science (2022–2024)
+            <strong>MCA</strong> – Hindustan University (Cloud Computing & Cyber
+            Security)
           </li>
-          <li>BCA – IEC University Solan (2016–2019)</li>
+          <li><strong>BCA</strong> – IEC University</li>
         </ul>
-      </div>
 
+        <div class="section-title">Technical Expertise</div>
+        <p>
+          Angular, PrimeNG, Angular Material, TypeScript, JavaScript, RxJS,
+          Signals, Standalone Components, Node.js, Express.js, REST APIs, MySQL,
+          MongoDB, Azure DevOps, Git, CI/CD, OpenAI API, Gemini API, Azure AI,
+          Prompt Engineering, Generative AI, Agile Scrum.
+        </p>
+      </div>
       <div class="text-center my-4 download-btn">
         <button onclick="window.print()" class="btn btn-dark">
           Download / Save as PDF
